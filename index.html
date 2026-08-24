@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nodo — Estudio de desarrollo de software</title>
+  <meta name="description" content="Landing pages, plataformas de cursos, blogs y sistemas de turnos, diseñados y desarrollados a medida por Nodo." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Sora:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#hero" class="brand-mark" aria-label="Nodo — inicio">
+    <svg class="brand-mark__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 4 L5 18 M12 4 L19 18" stroke="url(#brand-grad)" stroke-width="1.6" stroke-linecap="round" />
+      <circle cx="12" cy="4" r="2" fill="url(#brand-grad)" />
+      <circle cx="5" cy="18" r="2" fill="url(#brand-grad)" />
+      <circle cx="19" cy="18" r="2" fill="url(#brand-grad)" />
+      <defs>
+        <linearGradient id="brand-grad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#3B5BFD" />
+          <stop offset="1" stop-color="#8B3FFD" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <span class="brand-mark__label">nodo</span>
+  </a>
+
+  <nav class="node-rail" aria-label="Navegación de secciones">
+    <ul>
+      <li><a href="#hero" data-label="Inicio"><span class="dot"></span></a></li>
+      <li><a href="#servicios" data-label="Servicios"><span class="dot"></span></a></li>
+      <li><a href="#proceso" data-label="Cómo trabajamos"><span class="dot"></span></a></li>
+      <li><a href="#gestion" data-label="Gestión"><span class="dot"></span></a></li>
+      <li><a href="#porque" data-label="Por qué Nodo"><span class="dot"></span></a></li>
+      <li><a href="#faq" data-label="FAQ"><span class="dot"></span></a></li>
+      <li><a href="#contacto" data-label="Contacto"><span class="dot"></span></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="hero" class="section section--ink hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="section__inner hero__inner">
+        <p class="eyebrow reveal">Estudio de desarrollo de software</p>
+        <h1 class="hero__headline reveal">Tu sistema web es el <span class="grad-text">nodo</span> que conecta con tus clientes.</h1>
+        <p class="hero__sub reveal">Landing pages, plataformas de cursos, blogs, sistemas de turnos y mucho más — diseñados y desarrollados a medida, con alcance y presupuesto adaptado a tus necesidades.</p>
+        <div class="hero__ctas reveal">
+          <a href="#contacto" class="btn btn--primary">Contanos tu proyecto</a>
+          <a href="#servicios" class="btn btn--secondary">Ver qué hacemos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section section--paper">
+      <div class="section__inner">
+        <p class="eyebrow reveal">Qué hacemos</p>
+        <h2 class="section__title reveal">Te presentamos nuestras cuatro líneas de trabajo.</h2>
+
+        <ol class="services">
+          <li class="services__item reveal">
+            <span class="services__number">01</span>
+            <div>
+              <h3>Landing Pages</h3>
+              <p>Diseño enfocado en conversión, copy claro, carga rápida.</p>
+            </div>
+          </li>
+          <li class="services__item reveal">
+            <span class="services__number">02</span>
+            <div>
+              <h3>Plataformas de cursos</h3>
+              <p>Venta de cursos bajo marca propia, sin comisión de terceros.</p>
+            </div>
+          </li>
+          <li class="services__item reveal">
+            <span class="services__number">03</span>
+            <div>
+              <h3>Blogs con gestión de contenido</h3>
+              <p>Panel simple para publicar sin depender de un programador.</p>
+            </div>
+          </li>
+          <li class="services__item reveal">
+            <span class="services__number">04</span>
+            <div>
+              <h3>Sistemas de turnos y citas</h3>
+              <p>Reservas online 24/7, sin depender de WhatsApp.</p>
+            </div>
+          </li>
+          <li class="services__item services__item--open reveal">
+            <span class="services__number grad-text">+</span>
+            <div>
+              <h3>¿Necesitás algo distinto?</h3>
+              <p>Cualquier desarrollo web a medida que no entre en las cuatro líneas anteriores, a evaluación.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="proceso" class="section section--ink">
+      <div class="section__inner">
+        <p class="eyebrow reveal">Cómo trabajamos</p>
+        <h2 class="section__title reveal">Un camino claro, de la idea al proyecto funcionando.</h2>
+
+        <ol class="process">
+          <li class="process__item reveal">
+            <span class="process__node">01</span>
+            <h3>Consulta</h3>
+            <p>Sin costo, sin compromiso.</p>
+          </li>
+          <li class="process__item reveal">
+            <span class="process__node">02</span>
+            <h3>Propuesta</h3>
+            <p>Alcance, tiempos y precio cerrado, cotizado según proyecto y presupuesto.</p>
+          </li>
+          <li class="process__item reveal">
+            <span class="process__node">03</span>
+            <h3>Desarrollo</h3>
+            <p>Avances y comunicación constante.</p>
+          </li>
+          <li class="process__item reveal">
+            <span class="process__node">04</span>
+            <h3>Entrega</h3>
+            <p>Proyecto funcionando y documentado.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="gestion" class="section section--paper">
+      <div class="section__inner gestion__grid">
+        <div class="reveal">
+          <p class="eyebrow">Después de la entrega</p>
+          <h2 class="section__title">No te vendemos un proyecto y desaparecemos.</h2>
+          <p class="gestion__text">Además del desarrollo, ofrecemos un plan mensual de gestión que se encarga del dominio, el hosting y el mantenimiento de tu proyecto, para que no tengas que pensar en la parte técnica nunca más.</p>
+        </div>
+        <ul class="gestion__list reveal">
+          <li>Dominio y hosting al día</li>
+          <li>Actualizaciones y mantenimiento</li>
+          <li>Copias de seguridad periódicas</li>
+          <li>Soporte ante cualquier problema</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="porque" class="section section--ink">
+      <div class="section__inner">
+        <p class="eyebrow reveal">Por qué Nodo</p>
+        <h2 class="section__title reveal">Tres cosas que no vas a tener que explicar dos veces.</h2>
+
+        <div class="reasons">
+          <div class="reasons__item reveal">
+            <span class="reasons__mark"></span>
+            <p>Alcance por escrito, antes de empezar.</p>
+          </div>
+          <div class="reasons__item reveal">
+            <span class="reasons__mark"></span>
+            <p>Hablás directo con quien programa.</p>
+          </div>
+          <div class="reasons__item reveal">
+            <span class="reasons__mark"></span>
+            <p>Nos hacemos cargo después de entregar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--paper">
+      <div class="section__inner">
+        <p class="eyebrow reveal">Preguntas frecuentes</p>
+        <h2 class="section__title reveal">FAQ</h2>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary><span class="faq-item__marker"></span>¿Cuánto cuesta un proyecto?</summary>
+            <p>Depende del alcance. Cotizamos según tu proyecto y presupuesto, siempre con un precio cerrado antes de empezar.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-item__marker"></span>¿Cuánto tarda un proyecto?</summary>
+            <p>Varía según la complejidad. En la etapa de propuesta te damos un tiempo estimado junto con el alcance y el precio.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-item__marker"></span>¿Qué pasa si necesito cambios después de la entrega?</summary>
+            <p>Con el plan de gestión mensual te acompañamos después de la entrega. Cambios puntuales se evalúan aparte.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-item__marker"></span>¿Tengo que preocuparme por el dominio o el hosting?</summary>
+            <p>No. Si sumás el plan de gestión, nosotros nos encargamos de que el dominio y el hosting estén siempre al día.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section--ink contacto">
+      <div class="section__inner contacto__inner">
+        <h2 class="contacto__title reveal">¿Conectamos tu proyecto?</h2>
+        <a href="mailto:somosnodo.dev@gmail.com" class="btn btn--primary reveal">Escribirnos</a>
+        <ul class="contacto__list reveal">
+          <li><a href="mailto:somosnodo.dev@gmail.com">somosnodo.dev@gmail.com</a></li>
+          <li><a href="https://instagram.com/estudionodo.dev">@estudionodo.dev</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section__inner footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Nodo</span>
+        <p class="footer__tagline">Estudio de desarrollo de software</p>
+        <p class="footer__location">Buenos Aires, Argentina</p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="section__inner footer__bottom">
+      <p class="footer__copyright">© 2026 Nodo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
