@@ -198,17 +198,20 @@ ul, ol {
   background: none;
 }
 
-.brand-mark__icon {
-  width: 22px;
-  height: 22px;
+/* Horizontal lockup from brand-kit. Flat variants (symbol < 32px): Paper on dark, Ink on light. */
+.brand-mark__logo {
+  display: block;
+  height: var(--space-6);
+  width: auto;
 }
 
-.brand-mark__label {
-  font-family: var(--font-display);
-  font-weight: var(--text-h4--font-weight);
-  font-size: var(--text-h4);
-  color: var(--color-text);
-  transition: color var(--duration-base) var(--ease-standard);
+.brand-mark__logo--on-light,
+.brand-mark.light .brand-mark__logo--on-dark {
+  display: none;
+}
+
+.brand-mark.light .brand-mark__logo--on-light {
+  display: block;
 }
 
 /* Node rail nav
@@ -605,9 +608,9 @@ ul, ol {
 }
 
 .footer__logo {
-  font-family: var(--font-display);
-  font-weight: var(--text-h4--font-weight);
-  font-size: var(--text-h4);
+  display: block;
+  height: 28px;
+  width: auto;
 }
 
 .footer__tagline {

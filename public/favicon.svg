@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-  <rect width="24" height="24" rx="6" fill="#0A0A10" />
-  <path d="M12 7 L7 17 M12 7 L17 17" stroke="url(#g)" stroke-width="1.8" stroke-linecap="round" />
-  <circle cx="12" cy="7" r="2" fill="url(#g)" />
-  <circle cx="7" cy="17" r="2" fill="url(#g)" />
-  <circle cx="17" cy="17" r="2" fill="url(#g)" />
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#3B5BFD" />
-      <stop offset="1" stop-color="#8B3FFD" />
-    </linearGradient>
-  </defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Estudio Nodo"><title>Estudio Nodo</title><rect width="32" height="32" rx="7" fill="#0A0A10"/><path transform="translate(5.9 5.5) scale(0.2)" d="M100 86C100 95.941 91.941 104 82 104C74.058 104 67.317 98.856 64.927 91.718C55.634 66.141 36.222 45.517 11.254 34.693C4.655 32.024 0 25.556 0 18C0 8.059 8.059 0 18 0C25.942 0 32.683 5.144 35.073 12.282C42.291 32.149 55.616 49.029 72.907 60.647C75.025 49.488 73.005 37.723 66.846 27.718C65.045 24.915 64 21.579 64 18C64 8.059 72.059 0 82 0C91.941 0 100 8.059 100 18C100 21.579 98.955 24.915 97.154 27.718C87.989 42.608 87.989 61.392 97.154 76.282C98.955 79.085 100 82.421 100 86ZM36 86C36 95.941 27.941 104 18 104C8.059 104 0 95.941 0 86C0 76.059 8.059 68 18 68C27.941 68 36 76.059 36 86Z" fill="#F2F1F6"/></svg>
