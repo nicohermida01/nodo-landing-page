@@ -2,9 +2,18 @@ const NODE_COUNT = 60;
 const MAX_LINK_DIST = 140;
 const SPEED = 0.15;
 
+// Resolves a hex color token (e.g. --color-text-muted) into an "r, g, b" string for rgba().
+function readTokenRgb(el, name, fallback) {
+  const hex = getComputedStyle(el).getPropertyValue(name).trim().replace('#', '');
+  if (!/^[0-9a-f]{6}$/i.test(hex)) return fallback;
+  return [0, 2, 4].map((i) => parseInt(hex.slice(i, i + 2), 16)).join(', ');
+}
+
 export function initHeroCanvas(canvas) {
   const ctx = canvas.getContext('2d');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const linkRgb = readTokenRgb(canvas, '--color-text-muted', '143, 143, 166');
+  const nodeRgb = readTokenRgb(canvas, '--color-text', '242, 241, 246');
 
   let width = 0;
   let height = 0;
@@ -53,7 +62,7 @@ export function initHeroCanvas(canvas) {
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < MAX_LINK_DIST) {
           const opacity = 1 - dist / MAX_LINK_DIST;
-          ctx.strokeStyle = `rgba(139, 143, 166, ${opacity * 0.35})`;
+          ctx.strokeStyle = `rgba(${linkRgb}, ${opacity * 0.35})`;
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
@@ -64,7 +73,7 @@ export function initHeroCanvas(canvas) {
     }
 
     for (const n of nodes) {
-      ctx.fillStyle = 'rgba(196, 199, 217, 0.7)';
+      ctx.fillStyle = `rgba(${nodeRgb}, 0.55)`;
       ctx.beginPath();
       ctx.arc(n.x, n.y, 1.8, 0, Math.PI * 2);
       ctx.fill();

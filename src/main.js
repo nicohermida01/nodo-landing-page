@@ -42,7 +42,7 @@ function initBrandMarkTheme() {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          mark.classList.toggle('brand-mark--on-light', entry.target.classList.contains('section--paper'));
+          mark.classList.toggle('light', entry.target.classList.contains('light'));
         }
       });
     },

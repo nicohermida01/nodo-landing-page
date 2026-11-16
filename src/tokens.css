@@ -1,0 +1,221 @@
+/* GENERATED: copied from design/tokens/tokens.css; edit the source, not this file. */
+/*
+ * Estudio Nodo design tokens. Source of truth: design/DESIGN.md (tokens) + design/.impeccable/design.json (sidecar).
+ * Primitives are for building semantics only. Components consume semantic tokens exclusively.
+ * Default theme is dark (Ink). `.light` reassigns semantics; `.dark` restores them inside a light context.
+ * Naming follows Tailwind v4 theme namespaces so tokens.tailwind.css can map 1:1.
+ */
+
+:root {
+  /* ── Color primitives (hex canonical; OKLCH reference in the sidecar) ── */
+  --color-blue-50: #F1F5FF; /* oklch(97.0% 0.014 268.3) */
+  --color-blue-100: #E1E9FF; /* oklch(93.5% 0.030 268.3) */
+  --color-blue-200: #C5D5FE; /* oklch(87.5% 0.060 268.3) */
+  --color-blue-300: #9EB8FF; /* oklch(79.0% 0.105 268.3) */
+  --color-blue-400: #6D90FF; /* oklch(68.0% 0.167 268.3) */
+  --color-blue-500: #3B5BFD; /* oklch(55.5% 0.242 268.3) */
+  --color-blue-600: #2D46D8; /* oklch(48.0% 0.222 268.3) */
+  --color-blue-700: #2338AE; /* oklch(41.0% 0.188 268.3) */
+  --color-blue-800: #192B84; /* oklch(34.0% 0.150 268.3) */
+  --color-blue-900: #111E5C; /* oklch(27.0% 0.111 268.3) */
+  --color-blue-950: #07103A; /* oklch(20.0% 0.082 268.3) */
+
+  --color-violet-50: #F6F3FF; /* oklch(97.0% 0.015 295.1) */
+  --color-violet-100: #EBE6FF; /* oklch(93.5% 0.034 295.1) */
+  --color-violet-200: #D9CEFF; /* oklch(87.5% 0.068 295.1) */
+  --color-violet-300: #C0ABFF; /* oklch(79.0% 0.118 295.1) */
+  --color-violet-400: #A47DFF; /* oklch(68.5% 0.186 295.1) */
+  --color-violet-500: #8B3FFD; /* oklch(57.6% 0.259 295.1) */
+  --color-violet-600: #742BD8; /* oklch(50.0% 0.238 295.1) */
+  --color-violet-700: #5B1FAC; /* oklch(42.0% 0.202 295.1) */
+  --color-violet-800: #441A83; /* oklch(35.0% 0.161 295.1) */
+  --color-violet-900: #30145C; /* oklch(28.0% 0.119 295.1) */
+  --color-violet-950: #1D0A3B; /* oklch(21.0% 0.088 295.1) */
+
+  --color-neutral-50: #F2F1F6; /* oklch(96.0% 0.007 295.4) */
+  --color-neutral-100: #E5E5ED; /* oklch(92.5% 0.010 285.5) */
+  --color-neutral-200: #D0D0DA; /* oklch(86.0% 0.014 285.5) */
+  --color-neutral-300: #B1B1C0; /* oklch(76.5% 0.022 285.5) */
+  --color-neutral-400: #8F8FA6; /* oklch(65.8% 0.034 285.4) */
+  --color-neutral-500: #75758A; /* oklch(57.0% 0.032 285.5) */
+  --color-neutral-600: #5C5C6F; /* oklch(48.2% 0.030 285.2) */
+  --color-neutral-700: #414150; /* oklch(38.0% 0.026 285.5) */
+  --color-neutral-800: #292934; /* oklch(28.5% 0.020 285.5) */
+  --color-neutral-900: #16161E; /* oklch(20.5% 0.016 285.5) */
+  --color-neutral-950: #0A0A10; /* oklch(14.8% 0.013 284.7) */
+
+  --color-red-50: #FFF2F0; /* oklch(97.0% 0.014 25.0) */
+  --color-red-100: #FFE2DF; /* oklch(93.5% 0.032 25.0) */
+  --color-red-200: #FFC6C0; /* oklch(87.5% 0.066 25.0) */
+  --color-red-300: #FF9B93; /* oklch(79.0% 0.121 25.0) */
+  --color-red-400: #FA625D; /* oklch(69.0% 0.187 25.0) */
+  --color-red-500: #DF202E; /* oklch(58.0% 0.220 25.0) */
+  --color-red-600: #BB011D; /* oklch(50.0% 0.202 25.0) */
+  --color-red-700: #980517; /* oklch(43.0% 0.172 25.0) */
+  --color-red-800: #740C13; /* oklch(36.0% 0.136 25.0) */
+  --color-red-900: #530D0F; /* oklch(29.0% 0.101 25.0) */
+  --color-red-950: #360707; /* oklch(22.0% 0.075 25.0) */
+
+  --color-green-50: #ECF9EE; /* oklch(97.0% 0.020 152.0) */
+  --color-green-100: #D8F1DD; /* oklch(93.5% 0.037 152.0) */
+  --color-green-200: #B9E4C3; /* oklch(88.0% 0.065 152.0) */
+  --color-green-300: #8AD19D; /* oklch(80.0% 0.102 152.0) */
+  --color-green-400: #4FBB73; /* oklch(71.0% 0.145 152.0) */
+  --color-green-500: #00A151; /* oklch(62.0% 0.163 152.0) */
+  --color-green-600: #017E3F; /* oklch(52.0% 0.136 152.0) */
+  --color-green-700: #006430; /* oklch(44.0% 0.116 152.0) */
+  --color-green-800: #024D24; /* oklch(37.0% 0.096 152.0) */
+  --color-green-900: #013819; /* oklch(30.0% 0.078 152.0) */
+  --color-green-950: #00220C; /* oklch(22.0% 0.058 152.0) */
+
+  --color-amber-50: #FDF4E6; /* oklch(97.0% 0.020 75.0) */
+  --color-amber-100: #FAE8D0; /* oklch(94.0% 0.037 75.0) */
+  --color-amber-200: #F4D5AC; /* oklch(89.0% 0.065 75.0) */
+  --color-amber-300: #EEBE7A; /* oklch(83.0% 0.102 75.0) */
+  --color-amber-400: #E9A536; /* oklch(77.0% 0.145 75.0) */
+  --color-amber-500: #D38F04; /* oklch(70.0% 0.147 75.0) */
+  --color-amber-600: #AB7301; /* oklch(60.0% 0.126 75.0) */
+  --color-amber-700: #855902; /* oklch(50.0% 0.105 75.0) */
+  --color-amber-800: #654200; /* oklch(41.0% 0.086 75.0) */
+  --color-amber-900: #4A2F00; /* oklch(33.0% 0.069 75.0) */
+  --color-amber-950: #301D01; /* oklch(25.0% 0.052 75.0) */
+
+  --color-white: #FFFFFF;
+
+  /* ── Brand gradient (The Spark Rule: connection points only) ── */
+  --gradient-accent: linear-gradient(135deg, var(--color-blue-500), var(--color-violet-500));
+
+  /* ── Typography ── */
+  --font-display: 'Unbounded', sans-serif;
+  --font-body: 'Sora', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --text-display: clamp(2.441rem, 6vw, 3.815rem);
+  --text-display--line-height: 1.1;
+  --text-display--font-weight: 900;
+  --text-display--letter-spacing: 0em;
+  --text-h1: clamp(1.953rem, 5vw, 3.052rem);
+  --text-h1--line-height: 1.15;
+  --text-h1--font-weight: 700;
+  --text-h1--letter-spacing: 0em;
+  --text-h2: clamp(1.563rem, 4vw, 2.441rem);
+  --text-h2--line-height: 1.15;
+  --text-h2--font-weight: 700;
+  --text-h2--letter-spacing: 0em;
+  --text-h3: 1.25rem;
+  --text-h3--line-height: 1.3;
+  --text-h3--font-weight: 700;
+  --text-h3--letter-spacing: 0em;
+  --text-h4: 1.125rem;
+  --text-h4--line-height: 1.3;
+  --text-h4--font-weight: 700;
+  --text-h4--letter-spacing: 0em;
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+  --text-body-lg--letter-spacing: 0em;
+  --text-body: 1rem;
+  --text-body--line-height: 1.5;
+  --text-body--font-weight: 400;
+  --text-body--letter-spacing: 0em;
+  --text-label: 0.9375rem;
+  --text-label--line-height: 1.2;
+  --text-label--font-weight: 600;
+  --text-label--letter-spacing: 0em;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-small--font-weight: 400;
+  --text-small--letter-spacing: 0em;
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1.4;
+  --text-caption--font-weight: 400;
+  --text-caption--letter-spacing: 0.02em;
+  --text-mono: 0.8rem;
+  --text-mono--line-height: 1.4;
+  --text-mono--font-weight: 400;
+  --text-mono--letter-spacing: 0.08em;
+
+  /* ── Spacing (4px base) ── */
+  --spacing: 0.25rem;
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ── Radius ── */
+  --radius-none: 0;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* ── Elevation (flat by default; overlays are proposed, unused today) ── */
+  --shadow-none: none;
+  --shadow-overlay-sm: 0 4px 16px rgb(10 10 16 / 0.24);
+  --shadow-overlay-lg: 0 16px 48px rgb(10 10 16 / 0.4);
+
+  /* ── Motion ── */
+  --duration-fast: 200ms;
+  --duration-base: 300ms;
+  --duration-slow: 600ms;
+  --ease-standard: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --reveal-distance: 1.5rem;
+  --hover-lift: -2px;
+
+  /* ── Focus ── */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 3px;
+
+  /* ── Layout ── */
+  --container: 1100px;
+  --section-pad-y: clamp(4rem, 10vw, 8rem);
+  --section-pad-x: clamp(1.5rem, 6vw, 4rem);
+}
+
+/* ── Semantic colors: dark (default) ── */
+:root,
+.dark {
+  color-scheme: dark;
+  --color-bg: var(--color-neutral-950);
+  --color-surface: var(--color-neutral-900);
+  --color-text: var(--color-neutral-50);
+  --color-text-muted: var(--color-neutral-400);
+  --color-accent-text: var(--color-blue-400);
+  --color-primary: var(--color-blue-500);
+  --color-on-primary: var(--color-white);
+  --color-border: var(--color-neutral-800);
+  --color-border-strong: var(--color-neutral-400);
+  --color-focus: var(--color-blue-400);
+  --color-danger: var(--color-red-400);
+  --color-success: var(--color-green-400);
+  --color-warning: var(--color-amber-400);
+}
+
+/* ── Semantic colors: light ── */
+.light {
+  color-scheme: light;
+  --color-bg: var(--color-neutral-50);
+  --color-surface: var(--color-neutral-100);
+  --color-text: var(--color-neutral-950);
+  --color-text-muted: var(--color-neutral-600);
+  --color-accent-text: var(--color-violet-600);
+  --color-primary: var(--color-blue-500);
+  --color-on-primary: var(--color-white);
+  --color-border: var(--color-neutral-200);
+  --color-border-strong: var(--color-neutral-600);
+  --color-focus: var(--color-blue-600);
+  --color-danger: var(--color-red-600);
+  --color-success: var(--color-green-700);
+  --color-warning: var(--color-amber-700);
+}
