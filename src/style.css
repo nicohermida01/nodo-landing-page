@@ -475,7 +475,7 @@ ul, ol {
   }
 }
 
-/* Por que Nodo */
+/* Por que Estudio Nodo */
 .reasons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

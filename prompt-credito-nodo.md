@@ -1,16 +1,16 @@
-# Prompt: crédito Nodo en footer (variante texto simple)
+# Prompt: crédito Estudio Nodo en footer (variante texto simple)
 
 Reutilizable para cualquier proyecto de cliente. Pegar en la sesión de Claude Code que tiene abierto el repo del sitio destino.
 
 ---
 
-Agregá al footer del sitio un crédito de desarrollo que enlace a Nodo (estudionodo.tech). Es un link de texto simple, sin ícono, integrado a la línea de copyright existente del footer.
+Agregá al footer del sitio un crédito de desarrollo que enlace a Estudio Nodo (estudionodo.tech). Es un link de texto simple, sin ícono, integrado a la línea de copyright existente del footer.
 
 Estructura HTML:
 
 ```html
 <a class="credito" href="https://estudionodo.tech" target="_blank" rel="noopener">
-  Sitio desarrollado por <span class="credito__brand">Nodo</span>
+  Sitio desarrollado por <span class="credito__brand">Estudio Nodo</span>
 </a>
 ```
 

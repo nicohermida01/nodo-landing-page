@@ -1,6 +1,6 @@
-# Nodo — Landing Page
+# Estudio Nodo — Landing Page
 
-Marketing landing page for Nodo, a software development studio (Buenos Aires, Argentina). Single-page site built with vanilla JS and Vite.
+Marketing landing page for Estudio Nodo, a software development studio (Buenos Aires, Argentina). Single-page site built with vanilla JS and Vite.
 
 ## Stack
 
